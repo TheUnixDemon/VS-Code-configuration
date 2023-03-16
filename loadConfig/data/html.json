@@ -1,0 +1,48 @@
+{
+	"formGET": {
+		"prefix": "<form",
+		"body": [
+			"<form method=\"get\" action=\"\"></form>"
+		],
+		"description": "create a simple GET form"
+	},
+
+	"formPOST": {
+		"prefix": "<form",
+		"body": [
+			"<form method=\"post\" action=\"\"></form>"
+		],
+		"description": "create a simple GET form"
+	},
+
+	"inputFields": {
+		"prefix": "<input",
+		"body": [
+			"<input type=\"\" placeholder=\"\" name=\"\" value=\"\">"
+		],
+		"description": "print a basic input field"
+	},
+
+	"inputButtons": {
+		"prefix": "<button",
+		"body": [
+			"<button type=\"submit\" name=\"\" value=\"\">example</button>"
+		],
+		"description": "print a basic button"
+	},
+
+	"table": {
+		"prefix": "<table",
+		"body": [
+			"<table border>",
+			"  \t<tr>",
+			"\t\t\t<th>header</th>",
+			" \t</tr>",
+			"  \t<tr>",
+			"\t\t\t<td>data</td>",
+			" \t</tr>",
+			"</table>"
+		],
+		"description": "a table in HTML consists of table cells inside rows and columns"
+	}
+}
