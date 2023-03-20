@@ -1,0 +1,37 @@
+{
+    "foreign key": {
+        "prefix": "REF",
+        "body": [
+            "REFERENCES table()"
+        ],
+        "description": "create a foreign key"
+    },
+    
+    "AUTO_INCREMENT": {
+        "prefix": "INC",
+        "body": [
+            "AUTO_INCREMENT"
+        ],
+        "description": "set AI"
+    },
+
+    "PRIMARY KEY": {
+        "prefix": "PRIMARY",
+        "body": [
+            "PRIMARY KEY (user_id)"
+        ],
+        "description": "set Primary Key "
+    },
+
+    "Set default": {
+        "prefix": ":SET",
+        "body": [
+            "SET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";",
+            "START TRANSACTION;",
+            "SET time_zone = \"+00:00\";",
+            "",
+            "--ROLLBACK;",
+            "COMMIT;"
+        ]
+    }
+}

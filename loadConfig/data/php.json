@@ -1,0 +1,64 @@
+{
+	"createPDO": {
+		"prefix": "$pdo",
+		"body": [
+			"try {",
+			"\t\\$connection = new pdo(\"mysql:host=\\$servername;dbname=\\$database\", \\$username, \\$password); // create session",
+			"\t\\$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);",
+			"",
+			"\treturn \\$connection;",
+			"} catch(PDOException \\$e) {",
+			"\techo \"Connection failed: \" . \\$e->getMessage();",
+			"}"
+		],
+		"description": "create PDO session"
+	},
+
+	"prepareStatement": {
+		"prefix": "$prepare",
+		"body": [
+			"try {",
+			"\t\\$statement = \\$connection->prepare(\"SELECT * FROM :example;\");",
+			"\t\\$statement->execute(array(\"example\" => \\$example)); // :example = \\$example",
+			"",
+			"\t\\$result = \\$statement->fetch(); // return statement as array in \\$result",
+			"} catch(PDOException \\$e) {",
+			"\techo \"Statement failed: \" . \\$e->getMessage();",
+			"}"
+		],
+		"description": "execute an prepare statement with PDO"
+	},
+
+	"password_hash": {
+		"prefix": "$hash",
+		"body": [
+			"\\$password_hash = password_hash(\\$thisPassword, PASSWORD_DEFAULT);"
+		],
+		"description": "hashing for password"
+	},
+
+	"password_verify": {
+		"prefix": "$verify",
+		"body": [
+			"password_verify(\\$thisPassword, \\$truePassword) // \\$truePassword is already hashed"
+		],
+		"description": "verify $thisPassword with $truePassword and return true or false"
+	},
+
+	"newPage": {
+		"prefix": "$header",
+		"body": [
+			"header(\"Location: example.html\"); // go to the new page",
+			"exit;"
+		],
+		"description": "go to the new page"
+	},
+
+	"helpSQL": {
+		"prefix": "--helpSQL",
+		"body": [
+			"SELECT * FROM example INNER JOIN example2 ON example.date = example2.date ORDER BY example.date DESC;"
+		],
+		"description": "basic SQL-Query"
+	}
+}
