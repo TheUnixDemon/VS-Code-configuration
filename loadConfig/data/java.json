@@ -1,0 +1,53 @@
+{
+    "Simple Imports": {
+        "prefix": "##import",
+        "body": [
+            "import java.io.*; // Input Output",
+            "import java.util.*; // Scanner, ArrayList & co."
+        ]
+    },
+
+    "main": {
+        "prefix": "##main",
+        "body": [
+            "public static void main(String[] args)"
+        ]
+    },
+
+    "ArrayList": {
+        "prefix": "##array",
+        "body": [
+            "ArrayList<Type> example = new ArrayList<Type>();"
+        ]
+    },
+
+    "Save in file": {
+        "prefix": "##saveFile",
+        "body": [
+            "public void speichernMedienHD(){ //schreibe in filename",
+            "\ttry{",
+            "\t\tObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(filename));",
+            "\t\tos.writeObject((ArrayList<Medium>)medien);",
+            "\t\tos.close();",
+            "\t}catch(IOException ex){",
+            "\t\t",
+            "\t}",
+            "}"
+        ]
+    },
+
+    "Load in file": {
+        "prefix": "##loadFile",
+        "body": [
+            "public void ladeMedienHD(){ //lese aus filename",
+            "\ttry{",
+            "\t\tObjectInputStream is = new ObjectInputStream(new FileInputStream(filename));",
+            "\t\tmedien = (ArrayList<Medium>)is.readObject();",
+            "\t\tis.close();",
+            "\t}catch(IOException | ClassNotFoundException ex){",
+            "",
+            "\t}",
+            "}"
+        ]
+    }
+}

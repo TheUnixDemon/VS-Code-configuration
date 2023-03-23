@@ -12,8 +12,13 @@ code --install-extension ecmel.vscode-html-css # support for css and html
 code --install-extension Zignd.html-css-class-completion # autocompletion
 code --install-extension pranaygp.vscode-css-peek # allow peeking to css ID and class strings
 
-# sql
-code --install-extension Oracle.oracledevtools
+# java
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-maven
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-test
+code --install-extension redhat.java
 
 ####################
 
