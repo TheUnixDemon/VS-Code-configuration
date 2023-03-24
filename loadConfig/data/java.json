@@ -49,5 +49,12 @@
             "\t}",
             "}"
         ]
+    },
+    
+    "Scanner": {
+        "prefix": "##scann",
+        "body": [
+            "Scanner scann = new Scanner(System.in);"
+        ]
     }
 }
