@@ -1,5 +1,5 @@
 # VS Code setup for development
-This VS Code configuration is made for an mobile setup of an development enviroment. This include the languages within the web development(HTML, CSS, PHP, JS, TS, React and NextJS), CPP, Java, Python(3), Docker and LaTeX. 
+This VS Code configuration is made for an mobile setup of an development enviroment. This include the languages within the web development(HTML, CSS, PHP, JS, TS, React and NextJS), C++, Java, Python(3), Docker and LaTeX. 
 
 For these languages are included extensions like debugger, autocomplete and co. 
 
