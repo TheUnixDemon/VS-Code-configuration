@@ -4,20 +4,17 @@ sleep 2
 
 # php
 code --install-extension DEVSENSE.phptools-vscode # all-in-one php
-code --install-extension xdebug.php-debug # php debugger
-code --install-extension bmewburn.vscode-intelephense-client # php autocompletion
-code --install-extension xdebug.php-pack # another all-in-one php with intelephese
+code --install-extension xdebug.php-pack # php packs with debugger
 
 # html & css
 code --install-extension ecmel.vscode-html-css # support for css and html
 code --install-extension Zignd.html-css-class-completion # autocompletion
 code --install-extension pranaygp.vscode-css-peek # allow peeking to css ID and class strings
 
-# nextjs, typescript/javascript & react
+# nextjs, typescript/javascript & react 
 code --install-extension ms-vscode.vscode-typescript-next # support for typescript and javascript
 code --install-extension msjsdiag.vscode-react-native # debugger and commands for react native
 code --install-extension dsznajder.es7-react-js-snippets # extension for react native and react within JS and TS
-code --install-extension PulkitGangwar.nextjs-snippets # Nextjs snippets
 
 # webdev serverside tools
 code --install-extension ritwickdey.LiveServer # local server for php, html and others
@@ -26,17 +23,8 @@ code --install-extension ritwickdey.LiveServer # local server for php, html and 
 code --install-extension bradlc.vscode-tailwindcss # tools for tailwindcss
 code --install-extension austenc.tailwind-docs # docs
 
-# docker
-code --install-extension ms-azuretools.vscode-docker # support for docker
-code --install-extension formulahendry.docker-explorer # dockerfile explorer 
-
 # java
 code --install-extension vscjava.vscode-java-pack
-code --install-extension vscjava.vscode-maven
-code --install-extension vscjava.vscode-java-debug
-code --install-extension vscjava.vscode-java-dependency
-code --install-extension vscjava.vscode-java-test
-code --install-extension redhat.java
 
 # cpp
 code --install-extension ms-vscode.cpptools # debugging and autocomplete
@@ -44,12 +32,8 @@ code --install-extension ms-vscode.cpptools-extension-pack # extension pack from
 
 # python(3)
 code --install-extension ms-python.python
-code --install-extension donjayamanne.python-extension-pack # include popular extensions 
-
-# latex
-code --install-extension James-Yu.latex-workshop # compiling, debuggin and co.
-code --install-extension nickfode.latex-formatter # formating the code fresh
-code --install-extension JeffersonQin.latex-snippets-jeff # snippets and templates for latex
+code --install-extension donjayamanne.python-extension-pack # includes popular extensions 
+code --install-extension mgesbert.python-path # import path generation
 
 # others
 code --install-extension MS-vsliveshare.vsliveshare # vor co work
